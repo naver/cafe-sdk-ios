@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A60CC461BDE4DB600E2BD99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60CC451BDE4DB600E2BD99 /* main.m */; };
+		4A60CC491BDE4DB600E2BD99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60CC481BDE4DB600E2BD99 /* AppDelegate.m */; };
+		4A60CC4C1BDE4DB600E2BD99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60CC4B1BDE4DB600E2BD99 /* ViewController.m */; };
+		4A60CC4F1BDE4DB600E2BD99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A60CC4D1BDE4DB600E2BD99 /* Main.storyboard */; };
+		4A60CC511BDE4DB600E2BD99 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A60CC501BDE4DB600E2BD99 /* Images.xcassets */; };
+		4A60CC541BDE4DB600E2BD99 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A60CC521BDE4DB600E2BD99 /* LaunchScreen.xib */; };
+		4A60CC601BDE4DB600E2BD99 /* navercafesdk_sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A60CC5F1BDE4DB600E2BD99 /* navercafesdk_sampleTests.m */; };
+		4A60CC701BDE4E7400E2BD99 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC6F1BDE4E7400E2BD99 /* MobileCoreServices.framework */; };
+		4A60CC721BDE4E7C00E2BD99 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC711BDE4E7C00E2BD99 /* SystemConfiguration.framework */; };
+		4A60CC741BDE4E8300E2BD99 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC731BDE4E8300E2BD99 /* CoreMedia.framework */; };
+		4A60CC761BDE4E8900E2BD99 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC751BDE4E8900E2BD99 /* MediaPlayer.framework */; };
+		4A60CC781BDE4E9C00E2BD99 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC771BDE4E9B00E2BD99 /* AssetsLibrary.framework */; };
+		4A60CC7A1BDE4EA600E2BD99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC791BDE4EA600E2BD99 /* AVFoundation.framework */; };
+		4AA5BE441BFB296D00D6724F /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5BE421BFB296D00D6724F /* icon1.png */; };
+		4AA5BE451BFB296D00D6724F /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AA5BE431BFB296D00D6724F /* icon2.png */; };
+		4AAB65FB1C11480B00400C6D /* NaverCafeSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AAB65FA1C11480B00400C6D /* NaverCafeSDK.bundle */; };
+		4AAB66091C114C2800400C6D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB66081C114C2800400C6D /* Security.framework */; };
+		4AAB660A1C114C3200400C6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A60CC881BDE4F7E00E2BD99 /* UIKit.framework */; };
+		4AAB660C1C114C4D00400C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB660B1C114C4D00400C6D /* Foundation.framework */; };
+		4AAB660E1C114D3900400C6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB660D1C114D3900400C6D /* CoreGraphics.framework */; };
+		4AAB66111C11533200400C6D /* NaverCafeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB66101C11533200400C6D /* NaverCafeSDK.framework */; };
+		4AAB665C1C1166C600400C6D /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66411C1166C600400C6D /* AFHTTPRequestOperation.m */; };
+		4AAB665D1C1166C600400C6D /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66431C1166C600400C6D /* AFHTTPRequestOperationManager.m */; };
+		4AAB665E1C1166C600400C6D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66451C1166C600400C6D /* AFHTTPSessionManager.m */; };
+		4AAB665F1C1166C600400C6D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66481C1166C600400C6D /* AFNetworkReachabilityManager.m */; };
+		4AAB66601C1166C600400C6D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB664A1C1166C600400C6D /* AFSecurityPolicy.m */; };
+		4AAB66611C1166C600400C6D /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB664C1C1166C600400C6D /* AFURLConnectionOperation.m */; };
+		4AAB66621C1166C600400C6D /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB664E1C1166C600400C6D /* AFURLRequestSerialization.m */; };
+		4AAB66631C1166C600400C6D /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66501C1166C600400C6D /* AFURLResponseSerialization.m */; };
+		4AAB66641C1166C600400C6D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66521C1166C600400C6D /* AFURLSessionManager.m */; };
+		4AAB66651C1166C600400C6D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB66541C1166C600400C6D /* UIImageView+AFNetworking.m */; };
+		4AAB66661C1166C600400C6D /* libNaverLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB66561C1166C600400C6D /* libNaverLogin.a */; };
+		4AAB66671C1166C600400C6D /* NaverAuth.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AAB66571C1166C600400C6D /* NaverAuth.bundle */; };
+		4AAB66681C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB665B1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A60CC5A1BDE4DB600E2BD99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A60CC381BDE4DB600E2BD99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A60CC3F1BDE4DB600E2BD99;
+			remoteInfo = "navercafesdk-sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A60CC401BDE4DB600E2BD99 /* navercafesdk-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "navercafesdk-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A60CC441BDE4DB600E2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A60CC451BDE4DB600E2BD99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A60CC471BDE4DB600E2BD99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A60CC481BDE4DB600E2BD99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A60CC4A1BDE4DB600E2BD99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4A60CC4B1BDE4DB600E2BD99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4A60CC4E1BDE4DB600E2BD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A60CC501BDE4DB600E2BD99 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A60CC531BDE4DB600E2BD99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4A60CC591BDE4DB600E2BD99 /* navercafesdk-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "navercafesdk-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A60CC5E1BDE4DB600E2BD99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A60CC5F1BDE4DB600E2BD99 /* navercafesdk_sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = navercafesdk_sampleTests.m; sourceTree = "<group>"; };
+		4A60CC6F1BDE4E7400E2BD99 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4A60CC711BDE4E7C00E2BD99 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4A60CC731BDE4E8300E2BD99 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4A60CC751BDE4E8900E2BD99 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4A60CC771BDE4E9B00E2BD99 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4A60CC791BDE4EA600E2BD99 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4A60CC881BDE4F7E00E2BD99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4AA5BE421BFB296D00D6724F /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		4AA5BE431BFB296D00D6724F /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		4AAB65FA1C11480B00400C6D /* NaverCafeSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NaverCafeSDK.bundle; path = ../../lib/NaverCafeSDK.bundle; sourceTree = "<group>"; };
+		4AAB66081C114C2800400C6D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4AAB660B1C114C4D00400C6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4AAB660D1C114D3900400C6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4AAB66101C11533200400C6D /* NaverCafeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaverCafeSDK.framework; path = ../../lib/NaverCafeSDK.framework; sourceTree = "<group>"; };
+		4AAB66401C1166C600400C6D /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		4AAB66411C1166C600400C6D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		4AAB66421C1166C600400C6D /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		4AAB66431C1166C600400C6D /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		4AAB66441C1166C600400C6D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		4AAB66451C1166C600400C6D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		4AAB66461C1166C600400C6D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		4AAB66471C1166C600400C6D /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		4AAB66481C1166C600400C6D /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		4AAB66491C1166C600400C6D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		4AAB664A1C1166C600400C6D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		4AAB664B1C1166C600400C6D /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		4AAB664C1C1166C600400C6D /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		4AAB664D1C1166C600400C6D /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		4AAB664E1C1166C600400C6D /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		4AAB664F1C1166C600400C6D /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		4AAB66501C1166C600400C6D /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		4AAB66511C1166C600400C6D /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		4AAB66521C1166C600400C6D /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		4AAB66531C1166C600400C6D /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		4AAB66541C1166C600400C6D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		4AAB66561C1166C600400C6D /* libNaverLogin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNaverLogin.a; sourceTree = "<group>"; };
+		4AAB66571C1166C600400C6D /* NaverAuth.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NaverAuth.bundle; sourceTree = "<group>"; };
+		4AAB66581C1166C600400C6D /* NaverThirdPartyConstantsForApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaverThirdPartyConstantsForApp.h; sourceTree = "<group>"; };
+		4AAB66591C1166C600400C6D /* NaverThirdPartyLoginConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaverThirdPartyLoginConnection.h; sourceTree = "<group>"; };
+		4AAB665A1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLoginThirdPartyOAuth20InAppBrowserViewController.h; sourceTree = "<group>"; };
+		4AAB665B1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLoginThirdPartyOAuth20InAppBrowserViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A60CC3D1BDE4DB600E2BD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAB660E1C114D3900400C6D /* CoreGraphics.framework in Frameworks */,
+				4AAB660C1C114C4D00400C6D /* Foundation.framework in Frameworks */,
+				4A60CC701BDE4E7400E2BD99 /* MobileCoreServices.framework in Frameworks */,
+				4A60CC761BDE4E8900E2BD99 /* MediaPlayer.framework in Frameworks */,
+				4AAB660A1C114C3200400C6D /* UIKit.framework in Frameworks */,
+				4AAB66091C114C2800400C6D /* Security.framework in Frameworks */,
+				4A60CC7A1BDE4EA600E2BD99 /* AVFoundation.framework in Frameworks */,
+				4AAB66111C11533200400C6D /* NaverCafeSDK.framework in Frameworks */,
+				4A60CC781BDE4E9C00E2BD99 /* AssetsLibrary.framework in Frameworks */,
+				4A60CC741BDE4E8300E2BD99 /* CoreMedia.framework in Frameworks */,
+				4AAB66661C1166C600400C6D /* libNaverLogin.a in Frameworks */,
+				4A60CC721BDE4E7C00E2BD99 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A60CC561BDE4DB600E2BD99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A60CC371BDE4DB600E2BD99 = {
+			isa = PBXGroup;
+			children = (
+				4AAB663E1C1166C600400C6D /* external-lib */,
+				4A60CC421BDE4DB600E2BD99 /* navercafesdk-sample */,
+				4A60CC5C1BDE4DB600E2BD99 /* navercafesdk-sampleTests */,
+				4A60CC411BDE4DB600E2BD99 /* Products */,
+				4A60CC7C1BDE4EC900E2BD99 /* Resources */,
+				4A60CC7B1BDE4EBE00E2BD99 /* Framework */,
+			);
+			sourceTree = "<group>";
+		};
+		4A60CC411BDE4DB600E2BD99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A60CC401BDE4DB600E2BD99 /* navercafesdk-sample.app */,
+				4A60CC591BDE4DB600E2BD99 /* navercafesdk-sampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A60CC421BDE4DB600E2BD99 /* navercafesdk-sample */ = {
+			isa = PBXGroup;
+			children = (
+				4A60CC471BDE4DB600E2BD99 /* AppDelegate.h */,
+				4A60CC481BDE4DB600E2BD99 /* AppDelegate.m */,
+				4A60CC4A1BDE4DB600E2BD99 /* ViewController.h */,
+				4A60CC4B1BDE4DB600E2BD99 /* ViewController.m */,
+				4A60CC4D1BDE4DB600E2BD99 /* Main.storyboard */,
+				4A60CC501BDE4DB600E2BD99 /* Images.xcassets */,
+				4A60CC521BDE4DB600E2BD99 /* LaunchScreen.xib */,
+				4A60CC431BDE4DB600E2BD99 /* Supporting Files */,
+			);
+			path = "navercafesdk-sample";
+			sourceTree = "<group>";
+		};
+		4A60CC431BDE4DB600E2BD99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A60CC441BDE4DB600E2BD99 /* Info.plist */,
+				4A60CC451BDE4DB600E2BD99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A60CC5C1BDE4DB600E2BD99 /* navercafesdk-sampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A60CC5F1BDE4DB600E2BD99 /* navercafesdk_sampleTests.m */,
+				4A60CC5D1BDE4DB600E2BD99 /* Supporting Files */,
+			);
+			path = "navercafesdk-sampleTests";
+			sourceTree = "<group>";
+		};
+		4A60CC5D1BDE4DB600E2BD99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A60CC5E1BDE4DB600E2BD99 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A60CC7B1BDE4EBE00E2BD99 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB66101C11533200400C6D /* NaverCafeSDK.framework */,
+				4AAB660D1C114D3900400C6D /* CoreGraphics.framework */,
+				4AAB660B1C114C4D00400C6D /* Foundation.framework */,
+				4AAB66081C114C2800400C6D /* Security.framework */,
+				4A60CC881BDE4F7E00E2BD99 /* UIKit.framework */,
+				4A60CC791BDE4EA600E2BD99 /* AVFoundation.framework */,
+				4A60CC771BDE4E9B00E2BD99 /* AssetsLibrary.framework */,
+				4A60CC751BDE4E8900E2BD99 /* MediaPlayer.framework */,
+				4A60CC731BDE4E8300E2BD99 /* CoreMedia.framework */,
+				4A60CC711BDE4E7C00E2BD99 /* SystemConfiguration.framework */,
+				4A60CC6F1BDE4E7400E2BD99 /* MobileCoreServices.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		4A60CC7C1BDE4EC900E2BD99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5BE421BFB296D00D6724F /* icon1.png */,
+				4AA5BE431BFB296D00D6724F /* icon2.png */,
+				4AAB65FA1C11480B00400C6D /* NaverCafeSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4AAB663E1C1166C600400C6D /* external-lib */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB663F1C1166C600400C6D /* AFNetworking-2.6.1 */,
+				4AAB66551C1166C600400C6D /* NaverLogin-thirdPartyModule */,
+			);
+			name = "external-lib";
+			path = "../external-lib";
+			sourceTree = "<group>";
+		};
+		4AAB663F1C1166C600400C6D /* AFNetworking-2.6.1 */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB66401C1166C600400C6D /* AFHTTPRequestOperation.h */,
+				4AAB66411C1166C600400C6D /* AFHTTPRequestOperation.m */,
+				4AAB66421C1166C600400C6D /* AFHTTPRequestOperationManager.h */,
+				4AAB66431C1166C600400C6D /* AFHTTPRequestOperationManager.m */,
+				4AAB66441C1166C600400C6D /* AFHTTPSessionManager.h */,
+				4AAB66451C1166C600400C6D /* AFHTTPSessionManager.m */,
+				4AAB66461C1166C600400C6D /* AFNetworking.h */,
+				4AAB66471C1166C600400C6D /* AFNetworkReachabilityManager.h */,
+				4AAB66481C1166C600400C6D /* AFNetworkReachabilityManager.m */,
+				4AAB66491C1166C600400C6D /* AFSecurityPolicy.h */,
+				4AAB664A1C1166C600400C6D /* AFSecurityPolicy.m */,
+				4AAB664B1C1166C600400C6D /* AFURLConnectionOperation.h */,
+				4AAB664C1C1166C600400C6D /* AFURLConnectionOperation.m */,
+				4AAB664D1C1166C600400C6D /* AFURLRequestSerialization.h */,
+				4AAB664E1C1166C600400C6D /* AFURLRequestSerialization.m */,
+				4AAB664F1C1166C600400C6D /* AFURLResponseSerialization.h */,
+				4AAB66501C1166C600400C6D /* AFURLResponseSerialization.m */,
+				4AAB66511C1166C600400C6D /* AFURLSessionManager.h */,
+				4AAB66521C1166C600400C6D /* AFURLSessionManager.m */,
+				4AAB66531C1166C600400C6D /* UIImageView+AFNetworking.h */,
+				4AAB66541C1166C600400C6D /* UIImageView+AFNetworking.m */,
+			);
+			path = "AFNetworking-2.6.1";
+			sourceTree = "<group>";
+		};
+		4AAB66551C1166C600400C6D /* NaverLogin-thirdPartyModule */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB66561C1166C600400C6D /* libNaverLogin.a */,
+				4AAB66571C1166C600400C6D /* NaverAuth.bundle */,
+				4AAB66581C1166C600400C6D /* NaverThirdPartyConstantsForApp.h */,
+				4AAB66591C1166C600400C6D /* NaverThirdPartyLoginConnection.h */,
+				4AAB665A1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.h */,
+				4AAB665B1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m */,
+			);
+			path = "NaverLogin-thirdPartyModule";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A60CC3F1BDE4DB600E2BD99 /* navercafesdk-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A60CC631BDE4DB600E2BD99 /* Build configuration list for PBXNativeTarget "navercafesdk-sample" */;
+			buildPhases = (
+				4A60CC3C1BDE4DB600E2BD99 /* Sources */,
+				4A60CC3D1BDE4DB600E2BD99 /* Frameworks */,
+				4A60CC3E1BDE4DB600E2BD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "navercafesdk-sample";
+			productName = "navercafesdk-sample";
+			productReference = 4A60CC401BDE4DB600E2BD99 /* navercafesdk-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A60CC581BDE4DB600E2BD99 /* navercafesdk-sampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A60CC661BDE4DB600E2BD99 /* Build configuration list for PBXNativeTarget "navercafesdk-sampleTests" */;
+			buildPhases = (
+				4A60CC551BDE4DB600E2BD99 /* Sources */,
+				4A60CC561BDE4DB600E2BD99 /* Frameworks */,
+				4A60CC571BDE4DB600E2BD99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A60CC5B1BDE4DB600E2BD99 /* PBXTargetDependency */,
+			);
+			name = "navercafesdk-sampleTests";
+			productName = "navercafesdk-sampleTests";
+			productReference = 4A60CC591BDE4DB600E2BD99 /* navercafesdk-sampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A60CC381BDE4DB600E2BD99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = navercorp;
+				TargetAttributes = {
+					4A60CC3F1BDE4DB600E2BD99 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					4A60CC581BDE4DB600E2BD99 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 4A60CC3F1BDE4DB600E2BD99;
+					};
+				};
+			};
+			buildConfigurationList = 4A60CC3B1BDE4DB600E2BD99 /* Build configuration list for PBXProject "navercafesdk-sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A60CC371BDE4DB600E2BD99;
+			productRefGroup = 4A60CC411BDE4DB600E2BD99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A60CC3F1BDE4DB600E2BD99 /* navercafesdk-sample */,
+				4A60CC581BDE4DB600E2BD99 /* navercafesdk-sampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A60CC3E1BDE4DB600E2BD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA5BE441BFB296D00D6724F /* icon1.png in Resources */,
+				4A60CC4F1BDE4DB600E2BD99 /* Main.storyboard in Resources */,
+				4AAB66671C1166C600400C6D /* NaverAuth.bundle in Resources */,
+				4A60CC541BDE4DB600E2BD99 /* LaunchScreen.xib in Resources */,
+				4AAB65FB1C11480B00400C6D /* NaverCafeSDK.bundle in Resources */,
+				4AA5BE451BFB296D00D6724F /* icon2.png in Resources */,
+				4A60CC511BDE4DB600E2BD99 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A60CC571BDE4DB600E2BD99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A60CC3C1BDE4DB600E2BD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A60CC4C1BDE4DB600E2BD99 /* ViewController.m in Sources */,
+				4AAB66601C1166C600400C6D /* AFSecurityPolicy.m in Sources */,
+				4AAB665D1C1166C600400C6D /* AFHTTPRequestOperationManager.m in Sources */,
+				4AAB66611C1166C600400C6D /* AFURLConnectionOperation.m in Sources */,
+				4AAB66651C1166C600400C6D /* UIImageView+AFNetworking.m in Sources */,
+				4AAB665C1C1166C600400C6D /* AFHTTPRequestOperation.m in Sources */,
+				4A60CC491BDE4DB600E2BD99 /* AppDelegate.m in Sources */,
+				4AAB66681C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m in Sources */,
+				4AAB66621C1166C600400C6D /* AFURLRequestSerialization.m in Sources */,
+				4AAB665E1C1166C600400C6D /* AFHTTPSessionManager.m in Sources */,
+				4AAB665F1C1166C600400C6D /* AFNetworkReachabilityManager.m in Sources */,
+				4AAB66631C1166C600400C6D /* AFURLResponseSerialization.m in Sources */,
+				4AAB66641C1166C600400C6D /* AFURLSessionManager.m in Sources */,
+				4A60CC461BDE4DB600E2BD99 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A60CC551BDE4DB600E2BD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A60CC601BDE4DB600E2BD99 /* navercafesdk_sampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A60CC5B1BDE4DB600E2BD99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A60CC3F1BDE4DB600E2BD99 /* navercafesdk-sample */;
+			targetProxy = 4A60CC5A1BDE4DB600E2BD99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A60CC4D1BDE4DB600E2BD99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A60CC4E1BDE4DB600E2BD99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A60CC521BDE4DB600E2BD99 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A60CC531BDE4DB600E2BD99 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A60CC611BDE4DB600E2BD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A60CC621BDE4DB600E2BD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A60CC641BDE4DB600E2BD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_MODULES_AUTOLINK = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../lib",
+				);
+				INFOPLIST_FILE = "navercafesdk-sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../external-lib/NaverLogin-thirdPartyModule/**",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A60CC651BDE4DB600E2BD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_MODULES_AUTOLINK = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../lib",
+				);
+				INFOPLIST_FILE = "navercafesdk-sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../external-lib/NaverLogin-thirdPartyModule/**",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A60CC671BDE4DB600E2BD99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "navercafesdk-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navercafesdk-sample.app/navercafesdk-sample";
+			};
+			name = Debug;
+		};
+		4A60CC681BDE4DB600E2BD99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "navercafesdk-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/navercafesdk-sample.app/navercafesdk-sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A60CC3B1BDE4DB600E2BD99 /* Build configuration list for PBXProject "navercafesdk-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A60CC611BDE4DB600E2BD99 /* Debug */,
+				4A60CC621BDE4DB600E2BD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A60CC631BDE4DB600E2BD99 /* Build configuration list for PBXNativeTarget "navercafesdk-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A60CC641BDE4DB600E2BD99 /* Debug */,
+				4A60CC651BDE4DB600E2BD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A60CC661BDE4DB600E2BD99 /* Build configuration list for PBXNativeTarget "navercafesdk-sampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A60CC671BDE4DB600E2BD99 /* Debug */,
+				4A60CC681BDE4DB600E2BD99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A60CC381BDE4DB600E2BD99 /* Project object */;
+}
