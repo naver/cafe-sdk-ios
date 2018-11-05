@@ -1,3 +1,8 @@
+v.4.0.3
+-------------
+### updated
+1. Fixed iPhone 5 Crash 
+
 v.4.0.2
 -------------
 ### updated
