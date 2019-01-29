@@ -33,10 +33,10 @@ PLUG SDK를 앱에 적용하려면 PLUG SDK 제휴를 신청해야 합니다. �
 
 ### 1. 요구 사항
 
-- 애플리케이션 사용 환경: iOS 8.0 이상(64비트 아키텍처 지원, bitcode 지원)
+- 애플리케이션 사용 환경: iOS 9.0 이상(64비트 아키텍처 지원, bitcode 지원)
 - 동영상 녹화: iOS 9.0 이상, A7 이상
 - 실시간 스트리밍: iOS 10.0 이상, A7 이상
-- IDE: XCode 7.0 이상
+- IDE: XCode 9.0 이상
 
 ### 2. 프로젝트 설정
 
@@ -48,7 +48,8 @@ PLUG SDK를 사용하려면 XCode에서 다음과 같이 개발 환경을 설정
     - FLAnimatedImage  
     - AFNetworking  
     - 네이버 아이디로 로그인
-3. **Build Phases**의 **Link Binary With Libraries**에 다음 라이브러리를 추가합니다. 추가한 라이브러리의 **Status**는 **Required**로 설정합니다.
+    - OpenSSL
+3. **Build Phases**의 **Link Binary With Libraries**에 다음 라이브러리를 추가합니다. 
     - AVKit.framework
     - AVFoundation.framework
     - MobileCoreServices.framework
@@ -61,7 +62,7 @@ PLUG SDK를 사용하려면 XCode에서 다음과 같이 개발 환경을 설정
     - ImageIO.framework
     - QuartzCore.framework
     - WebKit.framework
-    - ReplayKit.framework(라이브러리의 **Status**를 **Optional**로 설정합니다)
+    - ReplayKit.framework
 4. **Info.plist**의 사용자 권한 획득 옵션을 추가합니다.
     - NSCameraUsageDescription
     - NSPhotoLibraryUsageDescription
@@ -140,15 +141,6 @@ PLUG SDK는 가로 모드와 세로 모드를 모두 지원합니다. 다음은 
 [[NCSDKManager getSharedInstance] setOrientationIsLandscape:YES];
 
 ```
-
-### 5. LIVE
-
-PLUG SDK는 사용자가 게임 화면을 실시간 스트리밍 할 수 있는 기능을 제공합니다.
-
-[라이브 상세 가이드](https://plug.gitbooks.io/plug-sdk-ios/content/ko/[%ED%95%9C]-%ED%94%8C%EB%9F%AC%EA%B7%B8-%EB%9D%BC%EC%9D%B4%EB%B8%8C.html)
-
-![LIVE](https://cafeptthumb-phinf.pstatic.net/MjAxNzExMTRfMTE3/MDAxNTEwNjQ2MTk3MjM1.7ss4wFV1nGd0Q_Lk8jpQ_HV2pJv_MR_w7FbHg74NSHog.Tc4f5bQ7IWR8Wbnc5xGVVeTPK1lZ7NyyWcMdA4li1qUg.PNG.cafesdksupport/02.PNG?type=w740)
-
 
 ## Files and Folders
 

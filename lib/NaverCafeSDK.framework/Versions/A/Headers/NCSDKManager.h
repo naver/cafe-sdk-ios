@@ -178,11 +178,6 @@ typedef NS_ENUM(NSUInteger, GLTabType) {
 - (void)ncSDKWidgetPostArticleWithImage;
 - (void)ncSDKWidgetSuccessVideoRecord;
 
-//Live callback
-- (void)ncSDKDidEndStreamingLiveViewCount:(NSInteger)viewCount
-                                likeCount:(NSInteger)likeCount;
-- (void)ncSDKDidEndWatchingLiveSeconds:(NSInteger)seconds;
-
 /*
  App Scheme
  */

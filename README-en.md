@@ -30,9 +30,9 @@ If you have any questions regarding working this SDK, please [visit our issue pa
 
 ### 1. Requirements
 
-- Applications: iOS 8.0 or later (64-bit architecture and bitcode supported)
+- Applications: iOS 9.0 or later (64-bit architecture and bitcode supported)
 - Video recording: iOS 9.0 or later, A7 or later
-- IDE: XCode 7.0 or later
+- IDE: XCode 9.0 or later
 
 ### 2. Configure a Project
 
@@ -44,7 +44,8 @@ To use the PLUG SDK, you must set up a development environment in Xcode as follo
     - FLAnimatedImage  
     - AFNetworking  
     - NAVER Login  
-3. Go to **Build Phases > Link Binary With Libraries** and add the following libraries. Set **Status** of each library to **Required**.
+    - OpenSSL
+3. Go to **Build Phases > Link Binary With Libraries** and add the following libraries. 
     - MobileCoreServices.framework
     - SystemConfiguration.framework
     - MediaPlayer.framework
@@ -55,7 +56,7 @@ To use the PLUG SDK, you must set up a development environment in Xcode as follo
     - ImageIO.framework
     - QuartzCore.framework
     - WebKit.framework
-    - ReplayKit.framework (set **Status** to **Optional**)
+    - ReplayKit.framework 
 4. Go to **Info.plist** and add User Privacy.
     - NSCameraUsageDescription
     - NSPhotoLibraryUsageDescription
