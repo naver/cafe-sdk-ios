@@ -62,7 +62,6 @@
 		4AAB66681C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB665B1C1166C600400C6D /* NLoginThirdPartyOAuth20InAppBrowserViewController.m */; };
 		4ACA56181CA8CBFA00DB2E81 /* NaverAuth.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA56171CA8CBFA00DB2E81 /* NaverAuth.bundle */; };
 		4ACD70651E9F681400AA517D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACD70641E9F681400AA517D /* WebKit.framework */; };
-		CEBD3FEC2200311C009A0AF4 /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD3FEB2200311C009A0AF4 /* openssl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +202,6 @@
 		4AFFF90E1CD2FEB400C3B280 /* NAVER-COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; name = "NAVER-COPYING"; path = "../../NAVER-COPYING"; sourceTree = "<group>"; };
 		4AFFF90F1CD2FEB400C3B280 /* NOTICE */ = {isa = PBXFileReference; lastKnownFileType = text; name = NOTICE; path = ../../NOTICE; sourceTree = "<group>"; };
 		4AFFF9101CD2FEB400C3B280 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		CEBD3FEB2200311C009A0AF4 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = "../external-lib/openssl.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBD3FEC2200311C009A0AF4 /* openssl.framework in Frameworks */,
 				4AAB66111C11533200400C6D /* NaverCafeSDK.framework in Frameworks */,
 				4A3BE3991F739FA70010DFAA /* AVKit.framework in Frameworks */,
 				4A3BE3981F739F9E0010DFAA /* ReplayKit.framework in Frameworks */,
@@ -437,7 +434,6 @@
 		4A9A5A451FEB4FC10021E8DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEBD3FEB2200311C009A0AF4 /* openssl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -533,6 +529,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				ja,
