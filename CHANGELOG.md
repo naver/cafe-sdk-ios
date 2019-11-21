@@ -1,7 +1,15 @@
-v.4.4.4
+v.4.4.5
 -------------
 ### fixed
-1. iOS UIWebView -> WKWebview 교체
+1. Rebuild with Xcode 11.2.1
+Storyboards containing a UITextView will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
+https://forums.developer.apple.com/thread/125287
+https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_release_notes
+
+v.4.4.4 (Deprecated)
+-------------
+### fixed
+1. iOS UIWebView -> WKWebView 교체
 
 v.4.4.3
 -------------
