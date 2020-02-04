@@ -34,7 +34,7 @@
     [[NCSDKManager getSharedInstance] setUseWidgetScreenShot:YES];
     [[NCSDKManager getSharedInstance] setUseWidgetVideoRecord:YES];
     
-    UIButton *button1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 10, 40, 40)];
+    UIButton *button1 = [[UIButton alloc] initWithFrame:CGRectMake(10, 80, 40, 40)];
     [button1 setImage:[UIImage imageNamed:@"icon1.png"] forState:UIControlStateNormal];
     [button1 addTarget:self action:@selector(touchButton1) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button1];

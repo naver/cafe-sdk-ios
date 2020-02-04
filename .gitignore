@@ -31,5 +31,5 @@ DerivedData
 #
 Pods/
 Podfile.lock
-NaverCafe/NaverCafe.xcodeproj/xcuserdata
-NaverCafe/NaverCafe.xcworkspace
+
+sample/navercafesdk-sample-ios/navercafesdk-sample.xcodeproj/xcuserdata
